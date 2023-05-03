@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+transition: 0.5s all ease-in-out;
+}
+
+body
+{
+    color: white;
+    font-family: 'Abel', sans-serif;
+}
+
+.container
+{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    /* overflow: scroll; */
+}
+
+.box
+{
+    position: absolute;
+    z-index: -2;
+    background-color: black;
+    border-radius: 50px;
+    width: 100%;
+    height: fit-content;
+}
+
+
+.navbar
+{
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 40px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.nav-left
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 33%;
+    /* align-items: flex-start; */
+    /* justify-content: space-around; */
+}    
+
+
+.bg-img
+{
+    width: 100%;
+    height: 40vh;
+    position: fixed;
+    z-index: -1;
+    display: flex;
+    justify-content: end;
+    /* align-items: center; */
+    padding-right: 25px;
+}
+.bg-img img
+{
+
+    min-width: 678px;
+    max-width: 40%;
+    max-height: 90vh;
+    min-height: 800px;
+    border-radius: 40px;
+    z-index: -1;
+}
+
+.select-section
+{
+    /* padding: 0px 25px 25px 25px; */
+    width: 100%;
+    /* position: absolute; */
+    /* top: 40%; */
+}
+
+.select-box
+{
+    margin: 40px;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 40px;
+}
+
+.full-stack
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.full-stack h2 a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.select
+{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    /* padding: 25px 0; */
+    font-size: 156px;
+    letter-spacing: 8px;
+}
+
+.intro-section,.f-end-section, .project-section
+{
+    display: flex;
+    width: 100%;
+}
+
+.intro-box, .f-end-box, .project-box
+{
+    width: 100% ;
+    margin: 40px;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 40px;
+}
+
+.intro-star, .f-end-heading, .project-heading
+{
+    font-size: 156px;
+    width: 100%;
+}
+
+.intro-details
+{
+    width: 100%;
+    display: flex;
+}
+.intro-details-text
+{
+    text-transform: uppercase;
+    width: 50%;
+    text-align: justify;
+}
+
+.intro-details-btn
+{
+    width: 50%;
+    display: flex;
+    align-items:self-end;
+    justify-content: center;
+}
+
+.intro-details-btn div
+{
+    border: 1px solid white;
+    padding: 25px 20px;
+    border-radius: 40px;
+    margin: 0px 20px;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+
+.f-end-graph
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* background-color: aquamarine; */
+}
+
+.skill-html,.skill-css,.skill-bootstrap
+{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.skill-name
+{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.skill-per
+{
+    width: 100%;
+    display: flex;
+    border: 1px solid white;
+    padding: 2px;
+}
+
+.skill-per::after
+{
+    content: "*";
+    width: 90%;
+    display: flex;
+    background-color: red;
+}
+
+.skill-css::after
+{
+    width: 80%;
+}
+
+.skill-bootstrap::after
+{
+    width: 60%;
+}
+.visit-btn
+{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.footer
+{
+    width: 100%;
+    display: flex;
+}
+
+.footer-box
+{
+    width: 100% ;
+    margin: 40px;
+    border-radius: 25px;
+    /* border: 3px solid red; */
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-heading
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-heading-name
+{
+    display: flex;
+    align-items: center;
+}
+
+.project-heading img
+{
+    width: 75%;
+}
+
+.project-description
+{
+    text-transform: uppercase;
+}
+.project-description h2, .project-description ul li
+{
+    padding: 15px 0;
+}
+
+.red
+{
+    color: red;
+}
+
+@media screen and (max-width: 1500px) { 
+    .select
+    {
+        font-size: 96px;
+    }
+
+    .bg-img
+    {
+        padding-right: 0;
+    }
+
+    .select img
+    {
+        transform: scale(0.75);
+    }
+
+    .intro-details-btn div
+    {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .intro-details-btn div
+    {
+        padding: 12px 10px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .box
+    {
+        font-size: 12px;
+        border-radius: 25px;
+    }
+    
+    .navbar
+    {
+        font-size: 12px;
+        padding: 20px;
+    }
+    
+    .intro-details-btn 
+    {
+        gap: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-details-btn div
+    {
+        font-size: 12px;
+    }
+    
+    .intro-star
+    {
+        margin-bottom: -50px ;
+    }
+
+    .select
+    {
+        font-size: 64px;
+    }
+    .select img
+    {
+        transform: scale(0.66);
+    }
+
+    .f-end-heading,.project-heading
+    {
+        font-size: 96px;
+    }
+
+    .f-end-graph
+    {
+        width: 100%;
+    }
+
+    .skill-name
+    {
+        width: 33%;
+    }
+
+    .project-heading img
+    {
+        transform: scale(0.75);
+    }
+    
+    .bg-img
+    {
+        height: 50vh;
+        position: absolute;
+        justify-content: center;
+
+    }
+
+    .full-stack
+    {
+        padding: 25px 0; 
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (max-width: 900px){
+    .select img, .project-heading div img 
+    {
+        transition: 0.3s all ease;
+        width: 0;
+    }
+    
+    .navbar
+    {
+        transition: 0.3s all ease;
+        justify-content: space-between;
+    }
+
+    .visit-btn
+    {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        margin: 10px;
+        padding: 15px;
+        border-radius: 50px;
+    }
+
+    .visit-btn:hover, .intro-details-btn div:hover
+    {
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        color: black;
+    }
+
+    .visit-btn:hover a
+    {
+        color: black;
+
+    }
+
+    .visit-btn a
+    {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .navbar 
+    {
+        font-size: 10px;
+        margin: 0;
+    }
+    .nav-left
+    {
+        gap: 20px;
+    }
+
+    .select,.f-end-heading,.project-heading
+    {
+        font-size: 48px;
+    }
+
+    .bg-img
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        padding: 10px;
+        gap: 0;
+    }
+
+    .bg-img img
+    {
+        /* min-width: 225px; */
+        /* min-height: 266px;  */
+        min-width: 100%;
+        min-height: 90vh;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .full-stack,.navbar,.intro-details-text,.skill-name, .project-description,.footer-box
+    {
+        font-size: 8px;
+    }
+    .intro-star
+    {
+        font-size: 128px;
+    }
+
+    .intro-details
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .intro-details-btn,.intro-details-text
+    {
+        width: 100%;
+    }
+
+    .intro-details-btn
+    {
+        flex-direction: row;
+    }
+    .intro-details-btn div
+    {
+        font-size: 8px;
+        margin: 0;
+    }
+
+    .intro-box,.select-box,.project-box,.f-end-box
+    {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .footer-box
+    {
+        padding: 20px;
+        margin: 0;
+    }
+
+    .skill-html,.skill-css,.skill-bootstrap
+    {
+        margin: 5px;
+    }
+
+    .project-description h2, .project-description ul li
+    {
+        padding: 5px 0;
+    }
+
+
+}
+
+
+@media screen and (max-width: 450px){
+    .full-stack,.navbar,.intro-details-text,.skill-name, .project-description,.footer-box, .intro-details-btn div
+    {
+        font-size: 6px;
+    }
+    .intro-star
+    {
+        font-size: 96px;
+    }
+
+    .select,.f-end-heading,.project-heading
+    {
+        font-size: 36px;
+    }
+
+
+}
+
+@media screen and (max-width: 350px){
+    
+    .navbar,.footer-box
+    {
+        justify-content: space-between;
+    }
+    
+    .full-stack,.navbar,.intro-details-text,.skill-name, .project-description,.footer-box, .intro-details-btn div
+    {
+        font-size: 5px;
+    }
+    .intro-star
+    {
+        font-size: 72px;
+    }
+
+    .intro-star
+    {
+        margin-bottom: 0;
+    }
+
+    .select,.f-end-heading,.project-heading
+    {
+        font-size: 28px;
+    }
+
+
+}
