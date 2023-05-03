@@ -20,7 +20,7 @@ body
     align-items: center;
     width: 100%;
     height: fit-content;
-    padding: 10px;
+    /* padding: 10px; */
     /* overflow: scroll; */
 }
 
@@ -29,7 +29,7 @@ body
     position: absolute;
     z-index: -2;
     background-color: black;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     width: 100%;
     height: fit-content;
 }
