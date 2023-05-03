@@ -310,8 +310,8 @@ body
 @media screen and (max-width: 1100px){
     .box
     {
-        font-size: 12px;
-        border-radius: 25px;
+        font-size: 18px;
+        /* border-radius: 25px; */
     }
     
     .navbar
@@ -431,6 +431,12 @@ body
 }
 
 @media screen and (max-width: 700px){
+
+    .full-stack,.navbar,.intro-details-text,.skill-name, .project-description,.footer-box
+    {
+        font-size: 14px;
+    }
+
     .navbar 
     {
         font-size: 10px;
@@ -468,7 +474,7 @@ body
 @media screen and (max-width: 600px){
     .full-stack,.navbar,.intro-details-text,.skill-name, .project-description,.footer-box
     {
-        font-size: 14px;
+        font-size: 12px;
     }
     .intro-star
     {
