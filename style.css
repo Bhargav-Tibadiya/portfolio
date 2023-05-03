@@ -403,7 +403,7 @@ body
         align-items: center;
         border: 1px solid white;
         padding: 15px;
-        margin: 0;
+        margin: 10px 0;
         border-radius: 50px;
     }
 
@@ -418,7 +418,6 @@ body
     .visit-btn:hover a
     {
         color: black;
-        margin: 0px;
 
     }
 
@@ -472,7 +471,7 @@ body
 }
 
 @media screen and (max-width: 600px){
-    .full-stack,.navbar,.intro-details-text,.skill-name, .project-description,.footer-box
+    .full-stack,.navbar,.intro-details-text,.skill-name, .project-description,.footer-box,.visit-btn a
     {
         font-size: 15px;
     }
@@ -491,6 +490,11 @@ body
     .intro-details-btn,.intro-details-text
     {
         width: 100%;
+    }
+
+    .full-stack h2,.navbar h2
+    {
+        font-size: 12px;
     }
 
     .intro-details-btn
@@ -530,13 +534,18 @@ body
 
 
 @media screen and (max-width: 450px){
-    .full-stack,.navbar,.intro-details-text,.skill-name, .project-description,.footer-box, .intro-details-btn div
+    .full-stack,.navbar,.intro-details-text,.skill-name, .project-description,.footer-box, .intro-details-btn div, .visit-btn a
     {
-        font-size: 12px;
+        font-size: 10px;
     }
     .intro-star
     {
         font-size: 96px;
+    }
+    
+    .full-stack h2
+    {
+        font-size: 12px;
     }
 
     .select,.f-end-heading,.project-heading
@@ -554,7 +563,7 @@ body
         justify-content: space-between;
     }
     
-    .full-stack,.navbar,.intro-details-text,.skill-name, .project-description,.footer-box, .intro-details-btn div
+    .full-stack,.navbar,.intro-details-text,.skill-name, .project-description,.footer-box, .intro-details-btn div,.visit-btn a
     {
         font-size: 8px;
     }
