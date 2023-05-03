@@ -434,7 +434,7 @@ body
 
     .full-stack,.navbar,.intro-details-text,.skill-name, .project-description,.footer-box
     {
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .navbar 
@@ -474,7 +474,7 @@ body
 @media screen and (max-width: 600px){
     .full-stack,.navbar,.intro-details-text,.skill-name, .project-description,.footer-box
     {
-        font-size: 16px;
+        font-size: 15px;
     }
     .intro-star
     {
